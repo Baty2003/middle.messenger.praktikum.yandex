@@ -1,0 +1,11 @@
+<main>
+	{{#> ContainerForm}}
+		{{#> Form}}
+			{{> Title text="Вход"}}
+			{{> InputForm label="Логин" name="login"}}
+			{{> InputForm label="Пароль" name="password"}}
+			{{> Button text="Авторизоваться" primary="true" class="container-form__button"}}
+			{{> Button text="Нет аккаунта?" page='register'}}
+		{{/Form}}
+	{{/ContainerForm}}
+</main>

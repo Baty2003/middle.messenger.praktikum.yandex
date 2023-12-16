@@ -1,0 +1,24 @@
+@import '/src/styles/colors.scss';
+
+.container-form {
+	min-width: 300px;
+	max-width: 500px;
+	min-height: 300px;
+	border: 1px solid grey;
+	border-radius: 15px;
+	background: $greyBackground;
+	margin: 0 auto;
+	padding: 40px 20px;
+	&--margin-top{
+		margin-top: 150px;
+	}
+
+	&__button{
+		margin-bottom: 10px;
+	}
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
