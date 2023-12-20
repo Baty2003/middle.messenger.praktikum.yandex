@@ -1,1 +1,1 @@
-export { default as LeftPartMessager } from "./LeftPartMessager.hbs";
+export { default as LeftPartMessager } from "./leftPartMessager.hbs";
