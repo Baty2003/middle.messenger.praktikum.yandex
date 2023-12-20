@@ -3,27 +3,46 @@ import * as Components from "./components";
 import * as Pages from "./pages";
 import Handlebars, { Template } from "handlebars/runtime";
 import { range } from "./utils/range";
+import cameraImg from "./assets/camera.jpg";
+import avatarImg from "./assets/defaultAvatar.png";
 
 const pages: PagesNavigateStorageType = {
   login: { page: Pages.LoginPage },
   register: { page: Pages.RegisterPage },
-  messaging: { page: Pages.MessagingPage },
-  profile: { page: Pages.Profile, context: { edit: false } },
-  profileEdit: { page: Pages.Profile, context: { edit: true } },
-  profilePasswordEdit: { page: Pages.Profile, context: { edit: true, passwordEdit: true } },
-  errorPage404: { page: Pages.ErrorPage, context: { code: 404, descripition: "Не туда попали, страница покинула нас" } },
-  errorPage500: { page: Pages.ErrorPage, context: { code: 500, descripition: "Ошибка сервера, такое случается, работаем" } },
+  messaging: { page: Pages.MessagingPage, context: { avatar: avatarImg } },
+  profile: { page: Pages.Profile, context: { edit: false, avatar: avatarImg } },
+  profileEdit: {
+    page: Pages.Profile,
+    context: { edit: true, avatar: avatarImg },
+  },
+  profilePasswordEdit: {
+    page: Pages.Profile,
+    context: { edit: true, passwordEdit: true, avatar: avatarImg },
+  },
+  errorPage404: {
+    page: Pages.ErrorPage,
+    context: {
+      code: 404,
+      descripition: "Не туда попали, страница покинула нас",
+    },
+  },
+  errorPage500: {
+    page: Pages.ErrorPage,
+    context: {
+      code: 500,
+      descripition: "Ошибка сервера, такое случается, работаем",
+    },
+  },
 };
 
 Handlebars.registerHelper("datas", () => {
   const res = range(15).map(() => ({
-    avatar: "/src/assets/defaultAvatar.png",
+    avatar: avatarImg,
     sender: "Отправитель",
     message: "Это такой текст который просто существует, не вини его",
     time: "15:15",
     unread: "5",
   }));
-  console.log(res);
   return res;
 });
 
@@ -46,7 +65,7 @@ Handlebars.registerHelper("messagesData", () => [
       },
       {
         type: "file",
-        src: "/src/assets/camera.jpg",
+        src: cameraImg,
         readed: false,
         own: false,
         time: "00:02",

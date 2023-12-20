@@ -1,7 +1,7 @@
 <main class="profile">
 	{{#> ContainerProfile}}
 	<div class="profile__avatar-container">
-		<img src="/src/assets/defaultAvatar.png" alt="Картинка" class="profile__avatar">
+		<img src="{{avatar}}" alt="Картинка" class="profile__avatar">
 		{{#if edit}}{{else}}<p class="profile__name">Иван</p>{{/if}}
 	</div>
 	{{#> Form class="profile__form"}}
