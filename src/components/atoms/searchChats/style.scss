@@ -1,0 +1,12 @@
+.search-chats {
+	padding: 10px 15px;
+	width: 100%;
+	background: rgb(221, 221, 221);
+	border-radius: 10px;
+	border: none;
+
+	&::placeholder {
+		text-align: center;
+		content: "FF";
+	}
+}

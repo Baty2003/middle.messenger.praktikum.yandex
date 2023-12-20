@@ -1,29 +1,27 @@
 @import '/src/styles/colors.scss';
 
-.input-form {
-	display: flex;
-	flex-direction: column;
-
+.input-profile {
+	display: grid;
+	grid-template-columns: 100px 5fr 4fr;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+	border-top: 1px solid grey;
+	padding: 5px 0;
 	&__label {
-		font-size: 12px;
-		padding-bottom: 5px;
+		font-size: 14px;
 		opacity: 0.6;
-		align-self: flex-start;
 	}
 
 	&__input {
 		background: none;
-		min-height: 25px;
+		min-height: 40px;
 		border: none;
 		outline: none;
-		border-bottom: 2px solid $mainColor;
+		border-left: 2px solid $mainColor;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 16px;
-		padding: 0 5px;
-
-		&--error {
-			border-bottom: 2px solid $errorColor;
-		}
+		padding: 5px 5px;
 	}
 
 	&__error {

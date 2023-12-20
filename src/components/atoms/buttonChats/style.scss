@@ -1,0 +1,27 @@
+@import '/src/styles/colors.scss';
+
+.button-chat {
+	background: none;
+	border: none;
+	font-size: 14px;
+	color: $greyText;
+	transition: 0.2s all;
+
+	&__img {
+		margin-left: 10px;
+
+		&--reverse {
+			margin-right: 10px;
+			transform: scale(-1, -1);
+		}
+	}
+
+	&:hover {
+		opacity: 0.95;
+		transform: scale(1.05);
+	}
+
+	&:active {
+		filter: invert(5);
+	}
+}

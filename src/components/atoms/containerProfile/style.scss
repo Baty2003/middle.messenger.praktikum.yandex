@@ -1,0 +1,15 @@
+@import '/src/styles/colors.scss';
+
+.container-profile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 300px;
+	max-width: 700px;
+	min-height: 600px;
+	border-radius: 15px;
+	background: $greyBackground;
+	margin: 0 auto;
+	padding: 50px 20px;
+	margin: 50px auto;
+}

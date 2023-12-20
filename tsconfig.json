@@ -17,14 +17,7 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
   },
-  "include": ["src", "./src/types"],
-  "paths": {
-    "components": ["./src/components"],
-    "styles": ["./src/styles"],
-    "pages": ["./src/pages"],
-    "assets": ["./src/assets"],
-    "utils": ["./src/utils"],
-  }
+  "include": ["./src", "./src/types", "server.js"],
 }

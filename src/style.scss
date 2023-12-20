@@ -1,12 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
-@import url('pages/loginPage/style.scss');
-@import url('components/title/style.scss');
-@import url('components/inputForm/style.scss');
-@import url('components/button/style.scss');
-@import url('components/form/style.scss');
-@import url('components/containerForm/style.scss');
-/* @import url('styles/colors.scss'); */
+@import url('styles/normilize.scss');
+@import url('styles/sharedStyle.scss');
+
+@import url('components/atoms/title/style.scss');
+@import url('components/atoms/inputForm/style.scss');
+@import url('components/atoms/button/style.scss');
+@import url('components/atoms/form/style.scss');
+@import url('components/atoms/containerForm/style.scss');
+@import url('components/atoms/containerProfile/style.scss');
+@import url('components/atoms/buttonChats/style.scss');
+@import url('components/atoms/chatsItem/style.scss');
+@import url('components/atoms/searchChats/style.scss');
+@import url('components/atoms/groupContainerMessagesByDate/style.scss');
+@import url('components/atoms/messageText/style.scss');
+@import url('components/atoms/inputProfile/style.scss');
+
+@import url('components/moleculs/chat/style.scss');
+@import url('components/moleculs/chatsList/style.scss');
+@import url('components/moleculs/headerChat/style.scss');
+@import url('components/moleculs/writeMessage/style.scss');
+
+@import url('components/templates/LeftPartMessager/style.scss');
+@import url('components/templates/RightPartMessager/style.scss');
+
+@import url('pages/messagingPage/style.scss');
+@import url('pages/profile/style.scss');
+@import url('pages/errorPage/style.scss');
+
+
 
 body {
 	font-family: "Open sans", sans-serif;
+}
+
+* {
+	box-sizing: border-box;
 }
