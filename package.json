@@ -1,6 +1,5 @@
 {
   "name": "middle.messanger.praktikum.yandex",
-  "private": true,
   "engines": {
     "node": ">=12.0.0"
   },
