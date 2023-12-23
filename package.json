@@ -10,7 +10,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --open",
-    "start": "tsc && vite build",
+    "start": "tsc && vite build && node ./server.js",
     "preview": "vite preview"
   },
   "devDependencies": {
