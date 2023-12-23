@@ -10,7 +10,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --open",
-    "start": "tsc && vite build && vite preview",
+    "start": "tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
