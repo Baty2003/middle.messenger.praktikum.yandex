@@ -1,1 +1,1 @@
-export {default as RegisterPage} from './registerPage.hbs';
+export { default as RegisterPage } from "./registerPage.hbs";

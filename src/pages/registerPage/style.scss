@@ -9,11 +9,12 @@
 	background: $greyBackground;
 	margin: 0 auto;
 	padding: 40px 20px;
-	&--margin-top{
+
+	&--margin-top {
 		margin-top: 150px;
 	}
 
-	&__button{
+	&__button {
 		margin-bottom: 10px;
 	}
 }

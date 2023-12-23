@@ -1,1 +1,1 @@
-export { default as MessagingPage } from './messagingPage.hbs';
+export { default as MessagingPage } from "./messagingPage.hbs";

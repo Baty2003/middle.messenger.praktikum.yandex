@@ -1,3 +1,3 @@
 export * from "./atoms";
 export * from "./moleculs";
-export * from "./templates"
+export * from "./templates";

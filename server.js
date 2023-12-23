@@ -2,7 +2,7 @@ import express from "express";
 import path from "path";
 
 console.log(path.join(__dirname, "index.html"));
-const PORT = 3001;
+const PORT = process.env.PORT || 3000;
 const app = express();
 app.use(express.static(__dirname));
 

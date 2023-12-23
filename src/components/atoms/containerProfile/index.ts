@@ -1,1 +1,1 @@
-export { default as ContainerProfile } from './containerProfile.hbs';
+export { default as ContainerProfile } from "./containerProfile.hbs";

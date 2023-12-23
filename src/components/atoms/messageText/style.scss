@@ -16,13 +16,13 @@
 		color: white;
 	}
 
-	&__img{
+	&__img {
 		background: none;
 		border: 1px solid $borderColor;
 		padding: 5px;
 	}
 
-	&__img > &__container-time{
+	&__img>&__container-time {
 		position: absolute;
 		bottom: 10px;
 		right: 10px;
@@ -30,7 +30,8 @@
 		padding: 1px 4px;
 		border-radius: 20px;
 	}
-	&__image{
+
+	&__image {
 		display: block;
 		padding: 0;
 		margin: 0;

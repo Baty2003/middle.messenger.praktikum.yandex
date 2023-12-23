@@ -1,1 +1,1 @@
-export {default as MessageText} from './messageText.hbs'
+export { default as MessageText } from "./messageText.hbs";

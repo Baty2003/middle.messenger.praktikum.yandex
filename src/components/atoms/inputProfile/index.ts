@@ -1,1 +1,1 @@
-export { default as InputProfile } from './inputProfile.hbs';
+export { default as InputProfile } from "./inputProfile.hbs";

@@ -1,1 +1,1 @@
-export {default as MessageFile} from './messageFile.hbs'
+export { default as MessageFile } from "./messageFile.hbs";
