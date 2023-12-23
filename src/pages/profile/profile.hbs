@@ -1,21 +1,21 @@
 <main class="profile">
 	{{#> ContainerProfile}}
-	<div class="profile__avatar-container">
+	<section class="profile__avatar-container">
 		<img src="{{avatar}}" alt="Картинка" class="profile__avatar">
 		{{#if edit}}{{else}}<p class="profile__name">Иван</p>{{/if}}
-	</div>
-	{{#> Form class="profile__form"}}
+	</section>
+	<section>{{#> Form}}
 		{{#if passwordEdit}}
-			{{> InputProfile label="Старый пароль" placeholder="Старый пароль" type="password" disabled=edit name="oldPassword"}}
-			{{> InputProfile label="Новый пароль" placeholder="Новый пароль" type="password" disabled=edit name="newPassword"}}
-			{{> InputProfile label="Повторите новый пароль" placeholder="Повторите новый пароль" type="password" disabled=edit}}
+			{{> InputProfile label="Старый пароль" placeholder="Старый пароль" type="password" disabled=edit name="oldPassword" id="oldPassword"}}
+			{{> InputProfile label="Новый пароль" placeholder="Новый пароль" type="password" disabled=edit name="newPassword" id="newPassword"}}
+			{{> InputProfile label="Повторите новый пароль" placeholder="Повторите новый пароль" type="password" disabled=edit id="repeatNewPassword"}}
 		{{else}}
-			{{> InputProfile label="Почта" placeholder="Почта" disabled=edit name="email"}}
-			{{> InputProfile label="Логин" placeholder="Логин" disabled=edit name="login"}}
-			{{> InputProfile label="Имя" placeholder="Имя" disabled=edit name="first_name"}}
-			{{> InputProfile label="Фамилия" placeholder="Фамилия" disabled=edit name="second_name"}}
-			{{> InputProfile label="Имя в чате" placeholder="Имя в чате" disabled=edit name="display_name"}}
-			{{> InputProfile label="Телефон" placeholder="Телефон" disabled=edit name="phone"}}
+			{{> InputProfile label="Почта" placeholder="Почта" disabled=edit name="email" id="email"}}
+			{{> InputProfile label="Логин" placeholder="Логин" disabled=edit name="login" id="login"}}
+			{{> InputProfile label="Имя" placeholder="Имя" disabled=edit name="first_name" id="first_name"}}
+			{{> InputProfile label="Фамилия" placeholder="Фамилия" disabled=edit name="second_name" id="second_name"}}
+			{{> InputProfile label="Имя в чате" placeholder="Имя в чате" disabled=edit name="display_name" id="display_name"}}
+			{{> InputProfile label="Телефон" placeholder="Телефон" disabled=edit name="phone" id="phone"}}
 		{{/if}}
 	<div class="profile__buttons-container">
 		{{#if edit}}
@@ -26,5 +26,6 @@
 		{{> Button text="Выйти" class="profile__button profile__button--red" page="messaging"}}{{/if}}
 	</div>
 	{{/Form}}
+	</section>
 	{{/ContainerProfile}}
 </main>

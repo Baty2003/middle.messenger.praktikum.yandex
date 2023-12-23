@@ -9,15 +9,23 @@ import avatarImg from "./assets/defaultAvatar.png";
 const pages: PagesNavigateStorageType = {
   login: { page: Pages.LoginPage },
   register: { page: Pages.RegisterPage },
-  messaging: { page: Pages.MessagingPage, context: { avatar: avatarImg } },
+  messaging: {
+    page: Pages.MessagingPage,
+    context: { avatar: avatarImg, alt: "Аватар" },
+  },
   profile: { page: Pages.Profile, context: { edit: false, avatar: avatarImg } },
   profileEdit: {
     page: Pages.Profile,
-    context: { edit: true, avatar: avatarImg },
+    context: { edit: true, avatar: avatarImg, alt: "Аватар" },
   },
   profilePasswordEdit: {
     page: Pages.Profile,
-    context: { edit: true, passwordEdit: true, avatar: avatarImg },
+    context: {
+      edit: true,
+      passwordEdit: true,
+      avatar: avatarImg,
+      alt: "Аватар",
+    },
   },
   errorPage404: {
     page: Pages.ErrorPage,
@@ -33,11 +41,15 @@ const pages: PagesNavigateStorageType = {
       descripition: "Ошибка сервера, такое случается, работаем",
     },
   },
+  navigate: {
+    page: Pages.Navigate,
+  },
 };
 
 Handlebars.registerHelper("datas", () => {
   const res = range(15).map(() => ({
     avatar: avatarImg,
+    alt: "Аватар",
     sender: "Отправитель",
     message: "Это такой текст который просто существует, не вини его",
     time: "15:15",
@@ -66,6 +78,7 @@ Handlebars.registerHelper("messagesData", () => [
       {
         type: "file",
         src: cameraImg,
+        alt: "Картинка",
         readed: false,
         own: false,
         time: "00:02",
@@ -100,7 +113,7 @@ const navigate = (namePage: keyof typeof pages) => {
   }
 };
 
-document.addEventListener("DOMContentLoaded", () => navigate("login"));
+document.addEventListener("DOMContentLoaded", () => navigate("navigate"));
 document.addEventListener("click", (e) => {
   e.preventDefault();
   const target = e.target as HTMLButtonElement;

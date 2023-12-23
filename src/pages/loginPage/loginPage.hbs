@@ -2,12 +2,10 @@
 	{{#> ContainerForm}}
 		{{#> Form}}
 			{{> Title text="Вход"}}
-			{{> InputForm label="Логин" name="login" errorMessage="Текст ошибки"}}
-			{{> InputForm label="Пароль" name="password" type="password"}}
+			{{> InputForm label="Логин" name="login" errorMessage="Текст ошибки" id="login"}}
+			{{> InputForm label="Пароль" name="password" type="password" id="password"}}
 			{{> Button text="Авторизоваться" primary="true" class="container-form__button" page="messaging"}}
 			{{> Button text="Нет аккаунта?" page='register'}}
-			{{> Button text="Страница ошибки 404" page='errorPage404'}}
-			{{> Button text="Страница ошибки 500" page='errorPage500'}}
 		{{/Form}}
 	{{/ContainerForm}}
 </main>

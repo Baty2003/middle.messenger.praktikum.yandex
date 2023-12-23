@@ -6,7 +6,8 @@ type PagesEnum =
   | "profileEdit"
   | "profilePasswordEdit"
   | "errorPage404"
-  | "errorPage500";
+  | "errorPage500"
+  | "navigate";
 
 type PagesNavigateStorageType = Record<
   PagesEnum,
