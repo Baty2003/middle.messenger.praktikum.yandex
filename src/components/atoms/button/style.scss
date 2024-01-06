@@ -1,0 +1,23 @@
+@import '/src/styles/colors.scss';
+
+.button {
+	background: transparent;
+	border: 1px solid transparent;
+	color: $mainColor;
+	padding: 10px 30px;
+	font-size: 18px;
+	border-radius: 10px;
+	transition: 0.2s all;
+
+	&--primary {
+		border: 1px solid white;
+		color: white;
+		background: $mainColor;
+	}
+
+
+	&:hover {
+		opacity: 0.9;
+		transform: scale(1.02);
+	}
+}

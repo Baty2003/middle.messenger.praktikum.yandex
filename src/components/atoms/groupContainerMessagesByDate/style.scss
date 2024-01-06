@@ -1,0 +1,12 @@
+.group-messages-by-date {
+	display: flex;
+	flex-direction: column;
+
+	&__date {
+		align-self: center;
+	}
+
+	&>* {
+		margin-bottom: 15px;
+	}
+}

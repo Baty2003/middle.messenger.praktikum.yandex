@@ -1,0 +1,5 @@
+<div class="chat">
+	{{#each (messagesData)}}
+		{{#> GroupContainerMessagesByDate}}{{this}}{{/GroupContainerMessagesByDate}}
+	{{/each}}
+</div>

@@ -1,0 +1,16 @@
+<main>
+	{{#> ContainerForm}}
+		{{#> Form}}
+			{{> Title text="Регистрация"}}
+			{{> InputForm label="Почта" name="email" id="email"}}
+			{{> InputForm label="Логин" name="login" id="login"}}
+			{{> InputForm label="Имя" name="first_name" id="first_name"}}
+			{{> InputForm label="Фамилия" name="second_name" id="second_name"}}
+			{{> InputForm label="Телефон" name="phone" id="phone"}}
+			{{> InputForm label="Пароль" name="password" id="password"}}
+			{{> InputForm label="Пароль (ещё раз)" name="passwordRepeat" id="passwordRepeat"}}
+			{{> Button text="Зарегистрироваться" primary="true" class="container-form__button" page="messaging"}}
+			{{> Button text="Войти" page='login'}}
+		{{/Form}}
+	{{/ContainerForm}}
+</main>

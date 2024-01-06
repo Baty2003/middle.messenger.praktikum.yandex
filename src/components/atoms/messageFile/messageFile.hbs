@@ -1,0 +1,7 @@
+<div class="message message__img{{#if own}} message__own{{/if}}">
+  <img src="{{src}}" alt='{{alt}}' class="message__image">
+  <span class="message__container-time">
+    {{#if own}}<span class="message__status-message {{#if readed}}message__status-message--readed{{else}}message__status-message--unreaded{{/if}}"></span>{{/if}}
+    <span class="message__time">{{time}}</span>
+  </span>
+</div>

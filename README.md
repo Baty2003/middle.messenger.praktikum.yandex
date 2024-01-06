@@ -1,8 +1,8 @@
 # Проект Яндекс практикума Middle frontend разработчик
+
 Исполнитель: **Восклецов Олег**
 В данном проекте использованы прекомпилированные компоненты handlebard, статики в проекте нету.
 **Ссылка на проект Netlify** - https://deploy--glistening-bublanina-414951.netlify.app/
-
 
 ## Навигация
 Ссылок по которым можно перемещаться по страницам отстуствуют на данном этапе проекта.
@@ -36,5 +36,4 @@
 **npm run start** - команда для сборки проекта для прода
 
 ## Макет
-Был использован стандартный макет Яндекса;
-[Макет Яндекса](https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0%3A1)
+Был использован стандартный макет Яндекса: [Макет Яндекса](https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0%3A1)

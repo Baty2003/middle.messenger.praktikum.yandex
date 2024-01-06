@@ -1,0 +1,10 @@
+<div class="group-messages-by-date">
+	<div class="group-messages-by-date__date">{{date}}</div>
+	{{#each messages}}
+		{{#if (isTextMessage this.type)}}
+		{{> MessageText}}
+		{{else}}
+		{{> MessageFile}}
+		{{/if}}
+	{{/each}}
+</div>

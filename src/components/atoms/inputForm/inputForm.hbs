@@ -1,0 +1,5 @@
+<div class="input-form">
+	<label class="input-form__label" for={{id}}>{{label}}</label>
+	<input {{#if type}}type="{{type}}"{{else}}type="text"{{/if}} class="input-form__input{{#if errorMessage}} input-form__input--error{{/if}}" name="{{name}}" id={{id}}>
+	<span class="input-form__error">{{errorMessage}}</span>
+</div>

@@ -1,0 +1,12 @@
+<div class="left-part-messager">
+	<div class="flex left-part-messager__buttons-container left-part-messager__container-items">
+		{{> ButtonChats left='true' text="Назад" page="login"}}
+		{{> ButtonChats text="Профиль" page="profile"}}
+	</div>
+	<div class="left-part-messager__container-items">
+		{{> SearchChats id="searchMessage"}}
+	</div>
+	<div class="left-part-messager__container-list">
+		{{> ChatsList}}
+	</div>
+</div>

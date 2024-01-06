@@ -1,0 +1,39 @@
+@import '/src/styles/colors.scss';
+
+.header-chat {
+	border-bottom: 1px solid $borderColor;
+	height: 60px;
+	display: grid;
+	grid-template-columns: 60px 1fr 50px;
+	align-items: center;
+	gap: 10px 0;
+
+	&__avatar {
+		width: 47px;
+		height: 47px;
+	}
+
+	&__sender {
+		font-weight: 600;
+	}
+
+	&__menu {
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+		background-image: url('/src/assets/dots.svg');
+		background-repeat: no-repeat;
+		background-position: 50%;
+		justify-self: flex-end;
+		margin-right: 10px;
+
+		&:hover {
+			background-color: $greyBackground;
+		}
+
+		&:active {
+			transform: scale(1.05);
+			opacity: 0.5;
+		}
+	}
+}

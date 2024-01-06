@@ -1,0 +1,28 @@
+@import '/src/styles/colors.scss';
+
+.left-part-messager {
+	display: flex;
+	flex-direction: column;
+	background: $greyBackground;
+	padding: 15px 15px 0 15px;
+	overflow-y: hidden;
+
+	&__buttons-container {
+		justify-content: space-between;
+	}
+
+	&__container-items {
+		margin-bottom: 15px;
+	}
+
+	&__container-list {
+		height: 100%;
+		overflow-y: scroll;
+		scrollbar-width: 0;
+		-ms-overflow-style: none;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+}

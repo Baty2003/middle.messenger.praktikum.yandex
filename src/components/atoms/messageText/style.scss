@@ -1,0 +1,75 @@
+@import '/src/styles/colors.scss';
+
+.message {
+	position: relative;
+	background: rgb(245, 238, 238);
+	padding: 12px;
+	border-radius: 0 15px 15px 15px;
+	align-self: flex-start;
+	max-width: 70%;
+	vertical-align: middle;
+
+	&__own {
+		align-self: flex-end;
+		border-radius: 15px 15px 0 15px;
+		background: $mainColor;
+		color: white;
+	}
+
+	&__img {
+		background: none;
+		border: 1px solid $borderColor;
+		padding: 5px;
+	}
+
+	&__img>&__container-time {
+		position: absolute;
+		bottom: 10px;
+		right: 10px;
+		background: rgb(201, 201, 201);
+		padding: 1px 4px;
+		border-radius: 20px;
+	}
+
+	&__image {
+		display: block;
+		padding: 0;
+		margin: 0;
+	}
+
+	&__text {
+		font-weight: 500;
+	}
+
+	&__container-time {
+		position: relative;
+		// display: inline-block;
+		margin-left: 7px;
+		bottom: -4px;
+		right: -3px;
+		float: right;
+	}
+
+	&__status-message {
+		display: inline-flex;
+		align-items: center;
+		width: 20px;
+		height: 15px;
+		vertical-align: middle;
+
+		&--readed {
+			background: url('/src/assets/readed.svg') no-repeat;
+			background-size: 100%;
+		}
+
+		&--unreaded {
+			background: url('/src/assets/checkMark.svg') no-repeat;
+			background-size: 100%;
+			background-position: 0px -5px;
+		}
+	}
+
+	&__time {
+		font-size: 12px;
+	}
+}
